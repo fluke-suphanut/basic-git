@@ -1,0 +1,408 @@
+<!DOCTYPE html><html><head>
+      <title>Day1_Note</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\User\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h2 id="devops-jenkins--github-actions--n8n---day-1">DevOps Jenkins &amp; GitHub Actions &amp; N8N - Day 1 </h2>
+<h3 id="-สารบัญ">📋 สารบัญ </h3>
+<ol>
+<li><a href="#%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3">ภาพรวมหลักสูตร</a></li>
+<li><a href="#%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%B7%E0%B8%AD-devops-cicd">พื้นฐานและการติดตั้งเครื่องมือ DevOps CI/CD</a></li>
+<li><a href="#%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99-git-%E0%B9%81%E0%B8%A5%E0%B8%B0-github">พื้นฐานการใช้งาน Git และ GitHub</a></li>
+<li><a href="#%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99-docker">พื้นฐานการใช้งาน Docker</a></li>
+</ol>
+<h2 id="โปรแกรม-tool-and-editor-ที่ใช้อบรม">โปรแกรม (Tool and Editor) ที่ใช้อบรม </h2>
+<ol>
+<li><strong>Visual Studio Code</strong></li>
+<li><strong>Java JDK 21.x</strong></li>
+<li><strong>Node.js 22.x</strong></li>
+<li><strong>Python 3.1x</strong></li>
+<li><strong>Docker Desktop</strong></li>
+<li><strong>Git</strong></li>
+</ol>
+<blockquote>
+<p>แนะนำ<br>
+หลักสูตรนี้ใช้ Java JDK เวอร์ชั่น 17 หรือ 21 เท่านั้น (เก่าหรือใหม่กว่านี้ไม่รองรับ)<br>
+หลักสูตรนี้ใช้ Node.JS เวอร์ชั่น 22 ขึ้นไป<br>
+หลักสูตรนี้ใช้ Python เวอร์ชั่น 3.10 ขึ้นไป</p>
+</blockquote>
+<hr>
+<h2 id="การตรวจสอบความเรียบร้อยของเครื่องมือที่ติดตั้งบน-windows--mac-os--linux">การตรวจสอบความเรียบร้อยของเครื่องมือที่ติดตั้งบน Windows / Mac OS / Linux </h2>
+<p>เปิด Command Prompt บน Windows หรือ Terminal บน Mac ขึ้นมาป้อนคำสั่งดังนี้</p>
+<h3 id="visual-studio-code">Visual Studio Code </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>code <span class="token parameter variable">--version</span>
+</code></pre><h3 id="node-js">Node JS </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">node</span> <span class="token parameter variable">-v</span>
+<span class="token function">npm</span> <span class="token parameter variable">-v</span>
+npx <span class="token parameter variable">-v</span>
+</code></pre><h3 id="java-jdk">Java JDK </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">java</span> <span class="token parameter variable">-version</span>
+<span class="token builtin class-name">set</span> JAVA_HOME
+where <span class="token function">java</span>
+</code></pre><h3 id="python">Python </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token comment"># Windows</span>
+python <span class="token parameter variable">--version</span>
+pip <span class="token parameter variable">--version</span>
+
+<span class="token comment"># Mac / Linux</span>
+python3 <span class="token parameter variable">--version</span>
+pip3 <span class="token parameter variable">--version</span>
+</code></pre><h3 id="docker">Docker </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker</span> <span class="token parameter variable">--version</span>
+<span class="token function">docker</span> compose version
+<span class="token function">docker</span> info
+</code></pre><h3 id="git">Git </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> version
+</code></pre><hr>
+<h2 id="พื้นฐานการใช้งาน-git">พื้นฐานการใช้งาน Git </h2>
+<ul>
+<li>เริ่มต้นใช้งาน Git ในโปรเจ็กต์</li>
+<li>การตั้งค่า , การ clone , คำสั่งพื้นฐาน</li>
+</ul>
+<h4 id="1-git-first-time-setup">1. Git First time setup </h4>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> user.name <span class="token string">"John Doe"</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> user.email johndoe@example.com
+</code></pre><blockquote>
+<p>คำสั่งนี้จะทำให้ Git รู้ว่า ใครเป็นคนทำการ commit โค้ด และทำเพียงครั้งเดียวเท่านั้น</p>
+</blockquote>
+<p>คำสั่งเช็คข้อมูลที่กำหนดไว้</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> config  <span class="token parameter variable">--list</span>
+<span class="token function">git</span> config  <span class="token parameter variable">--global</span> <span class="token parameter variable">--list</span>
+</code></pre><h4 id="2-set-default-branch-main">2. Set Default branch "main" </h4>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token comment"># ตั้งค่า default branch เป็น main</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> init.defaultBranch main
+
+<span class="token comment"># ตรวจสอบหลังตั้งค่า</span>
+<span class="token function">git</span> config <span class="token parameter variable">--list</span>
+<span class="token function">git</span> config <span class="token parameter variable">--list</span> --show-origin
+</code></pre><blockquote>
+<p>Git มีการตั้งค่าได้ 3 ระดับ ซึ่งจะถูกอ่านเรียงต่อกันตามลำดับ</p>
+<ol>
+<li>System: การตั้งค่าสำหรับทุก User บนเครื่องคอมพิวเตอร์นี้</li>
+<li>Global: การตั้งค่าสำหรับ User ของคุณคนเดียว (ไฟล์ ~/.gitconfig)</li>
+<li>Local: การตั้งค่าสำหรับโปรเจกต์นั้นๆ โปรเจกต์เดียว (ไฟล์ .git/config ในโฟลเดอร์โปรเจกต์)</li>
+</ol>
+</blockquote>
+<h4 id="3-git-workflow">3. Git Workflow </h4>
+<h5 id="31-สร้างโฟลเดอร์โปรเจ็กต์ใหม่">3.1 สร้างโฟลเดอร์โปรเจ็กต์ใหม่ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">mkdir</span> devops-jenkins-github-actions-n8n/basic-git
+<span class="token builtin class-name">cd</span> devops-jenkins-github-actions-n8n/basic-git
+</code></pre><h5 id="32-เริ่มต้น-git-ในโฟลเดอร์">3.2 เริ่มต้น git ในโฟลเดอร์ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> init
+</code></pre><h5 id="33-สร้างไฟล์-greetingtxt">3.3 สร้างไฟล์ greeting.txt </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">echo</span> <span class="token string">"Greeting message line 1"</span> <span class="token operator">&gt;&gt;</span> greeting.txt
+</code></pre><h5 id="34-ตรวจสอบสถานะ">3.4 ตรวจสอบสถานะ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> status
+</code></pre><h5 id="35-เพิ่มไฟล์เข้า-staging-area">3.5 เพิ่มไฟล์เข้า staging area </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> <span class="token function">add</span> greeting.txt
+</code></pre><h5 id="36-ตรวจสอบสถานะ">3.6 ตรวจสอบสถานะ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> status
+</code></pre><h5 id="37-commit-ไฟล์">3.7 commit ไฟล์ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Initial commit"</span>
+</code></pre><h5 id="38-ตรวจสอบสถานะ">3.8 ตรวจสอบสถานะ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> status
+</code></pre><h5 id="39-แก้ไขไฟล์-greetingtxt">3.9 แก้ไขไฟล์ greeting.txt </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">echo</span> <span class="token string">"Greeting message line 2"</span> <span class="token operator">&gt;&gt;</span> greeting.txt
+</code></pre><h5 id="310-ตรวจสอบสถานะ">3.10 ตรวจสอบสถานะ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> status
+</code></pre><h5 id="311-เพิ่มไฟล์เข้า-staging-area">3.11 เพิ่มไฟล์เข้า staging area </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> <span class="token function">add</span> greeting.txt
+or
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+</code></pre><h5 id="312-ตรวจสอบสถานะ">3.12 ตรวจสอบสถานะ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> status
+</code></pre><h5 id="313-commit-ไฟล์">3.13 commit ไฟล์ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Add line 2 to greeting.txt"</span>
+</code></pre><h5 id="314-ตรวจสอบสถานะ">3.14 ตรวจสอบสถานะ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> status
+</code></pre><h5 id="313-commit-ไฟล์-1">3.13 commit ไฟล์ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Add line 2 to greeting.txt"</span>
+</code></pre><h5 id="314-ตรวจสอบสถานะ-1">3.14 ตรวจสอบสถานะ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> status
+</code></pre><h5 id="315-ดูประวัติการ-commit">3.15 ดูประวัติการ commit </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> log
+</code></pre><h5 id="316-ดูประวัติการ-commit-แบบย่อ">3.16 ดูประวัติการ commit แบบย่อ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> log <span class="token parameter variable">--oneline</span>
+<span class="token function">git</span> log <span class="token parameter variable">--oneline</span> <span class="token parameter variable">--graph</span> <span class="token parameter variable">--decorate</span> <span class="token parameter variable">--all</span>
+</code></pre><h5 id="317-ดูความแตกต่างของไฟล์">3.17 ดูความแตกต่างของไฟล์ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token comment"># ปกติ</span>
+<span class="token function">git</span> <span class="token function">diff</span> HEAD~1 HEAD greeting.txt
+
+<span class="token comment"># สีสันสวยงาม</span>
+<span class="token function">git</span> <span class="token function">diff</span> <span class="token parameter variable">--color</span> HEAD~1 HEAD greeting.txt
+
+<span class="token comment"># แบบมีบริเวณบรรทัดเพิ่ม-ลบ</span>
+<span class="token function">git</span> <span class="token function">diff</span> <span class="token parameter variable">--color</span> <span class="token parameter variable">--unified</span><span class="token operator">=</span><span class="token number">5</span> HEAD~1 HEAD greeting.txt
+</code></pre><h5 id="318-เพิ่มไฟล์-readmetxt">3.18 เพิ่มไฟล์ readme.txt </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">echo</span> <span class="token string">"# Basic Git"</span> <span class="token operator">&gt;&gt;</span> readme.txt
+<span class="token function">git</span> <span class="token function">add</span> readme.txt
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Add readme.txt"</span>
+<span class="token function">git</span> status
+<span class="token function">git</span> log <span class="token parameter variable">--oneline</span>
+</code></pre><h5 id="319-ย้อนกลับและแก้ไขการเปลี่ยนแปลง-undorepair">3.19 ย้อนกลับและแก้ไขการเปลี่ยนแปลง (Undo/Repair) </h5>
+<h5 id="วิธีที่-1-git-reset--hard-การย้อนเวลาแบบทําลายล้าง-">วิธีที่ 1: Git Reset --hard (การย้อนเวลาแบบทำลายล้าง) 💣 </h5>
+<p><code>git reset --hard &lt;commit&gt;</code> ทำ 3 อย่างพร้อมกัน:</p>
+<ol>
+<li>ย้าย HEAD: ย้ายตัวชี้ (HEAD) และ Branch ปัจจุบันกลับไปที่ <commit> ที่ระบุ</commit></li>
+<li>ล้าง Staging Area: ทำให้ Staging Area (index) ตรงกับสถานะของ <commit> นั้น</commit></li>
+<li>ล้าง Working Directory: ลบการเปลี่ยนแปลงทั้งหมด ในไฟล์ที่คุณกำลังทำงานอยู่ (ที่ยังไม่ได้ commit) ให้กลับไปเหมือนกับ <commit> นั้น</commit></li>
+</ol>
+<p>แสดงภาพกราฟิก</p>
+<pre data-role="codeBlock" data-info="plaintext" class="language-plaintext plaintext"><code>HEAD -&gt; main
+ o---o---o---o---o  main (HEAD)
+          ^
+          |
+        &lt;commit&gt;
+          |
+          +-- Staging Area (index) ถูกล้าง
+          |
+          +-- Working Directory ถูกล้าง
+</code></pre><blockquote>
+<p>สรุป: เป็นคำสั่งสำหรับ "ทิ้งทุกอย่าง" ที่ทำหลังจาก <commit> นั้นไป แล้วย้อนเวลากลับไปจุดนั้นอย่างถาวร</commit></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> reset <span class="token parameter variable">--hard</span> <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span>
+<span class="token function">git</span> status
+<span class="token function">git</span> log <span class="token parameter variable">--oneline</span>
+</code></pre><h5 id="วิธีที่-2-git-reset--soft-การย้อนเวลาแบบเก็บงาน-️">วิธีที่ 2: Git Reset --soft (การย้อนเวลาแบบเก็บงาน) 🛠️ </h5>
+<p><code>git reset --soft &lt;commit&gt;</code> ทำ 2 อย่าง:</p>
+<ol>
+<li>ย้าย HEAD: ย้ายตัวชี้ (HEAD) และ Branch ปัจจุบันกลับไปที่ <commit> ที่ระบุ</commit></li>
+<li>เก็บการเปลี่ยนแปลง: ทำให้การเปลี่ยนแปลงทั้งหมดใน Staging Area (index) ยังคงอยู่</li>
+</ol>
+<p>แสดงภาพกราฟิก</p>
+<pre data-role="codeBlock" data-info="plaintext" class="language-plaintext plaintext"><code>HEAD -&gt; main
+ o---o---o---o---o  main (HEAD)
+          ^
+          |
+        &lt;commit&gt;
+          |
+          +-- Staging Area (index) ยังคงอยู่
+          |
+          +-- Working Directory ยังคงอยู่
+</code></pre><blockquote>
+<p>สรุป: เป็นคำสั่งสำหรับ "ย้อนกลับ" ไปยัง <commit> ที่ระบุ แต่ยังคงเก็บการเปลี่ยนแปลงทั้งหมดใน Staging Area (index) ไว้</commit></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> reset <span class="token parameter variable">--soft</span> <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span>
+<span class="token function">git</span> status
+<span class="token function">git</span> log <span class="token parameter variable">--oneline</span>
+</code></pre><h5 id="วิธีที่-3-git-revert-การย้อนกลับแบบสร้าง-commit-ใหม่-">วิธีที่ 3: Git Revert (การย้อนกลับแบบสร้าง commit ใหม่) 🔄 </h5>
+<p><code>git revert &lt;commit&gt;</code> สร้าง commit ใหม่ที่ย้อนกลับการเปลี่ยนแปลงที่ทำใน <commit> ที่ระบุ โดยไม่เปลี่ยนแปลงประวัติของ commit</commit></p>
+<p>แสดงภาพกราฟิก</p>
+<pre data-role="codeBlock" data-info="plaintext" class="language-plaintext plaintext"><code>HEAD -&gt; main
+ o---o---o---o---o  main (HEAD)
+          ^
+          |
+        &lt;commit&gt;
+          |
+          +-- Staging Area (index) ถูกล้าง
+          |
+          +-- Working Directory ถูกล้าง
+          |
+        +---o  main (HEAD) (commit ใหม่ที่ย้อนกลับ)
+        |
+      &lt;commit&gt;
+        |
+        +---o  main (HEAD)
+</code></pre><blockquote>
+<p>สรุป: เป็นคำสั่งสำหรับ "ย้อนกลับ" การเปลี่ยนแปลงที่ทำใน <commit> ที่ระบุ โดยสร้าง commit ใหม่ที่ทำการย้อนกลับนั้น</commit></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> revert <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span>
+<span class="token function">git</span> status
+<span class="token function">git</span> log <span class="token parameter variable">--oneline</span>
+</code></pre><h5 id="วิธีที่-4-git-checkout-การแวะดูอดีต-️️">วิธีที่ 4: Git Checkout (การแวะดูอดีต) 🕵️‍♂️ </h5>
+<p><code>git checkout &lt;commit&gt;</code> ทำหน้าที่แตกต่างออกไป:</p>
+<ol>
+<li>
+<p>ย้าย HEAD: ย้ายตัวชี้ (HEAD) ไปยัง <commit> ที่ระบุ แต่ ไม่ได้ย้าย Branch ตามไปด้วย สิ่งนี้จะทำให้คุณเข้าสู่สถานะที่เรียกว่า "detached HEAD"</commit></p>
+</li>
+<li>
+<p>อัปเดต Working Directory: ทำให้ไฟล์ใน Working Directory ของคุณตรงกับสถานะของ <commit> นั้น เพื่อให้คุณสามารถดูหรือทดสอบโค้ด ณ จุดนั้นได้</commit></p>
+</li>
+</ol>
+<p>แสดงภาพกราฟิก</p>
+<pre data-role="codeBlock" data-info="plaintext" class="language-plaintext plaintext"><code>HEAD -&gt; main
+ o---o---o---o---o  main (HEAD)
+          ^
+          |
+        &lt;commit&gt;
+          |
+          +-- Staging Area (index) ถูกล้าง
+          |
+          +-- Working Directory ถูกล้าง
+          |
+        +---o  main (HEAD) (commit ใหม่ที่ย้อนกลับ)
+        |
+      &lt;commit&gt;
+        |
+        +---o  main (HEAD)
+</code></pre><blockquote>
+<p>สรุป: เป็นคำสั่งสำหรับ "สลับไปดู" โค้ดในอดีตชั่วคราว เมื่อคุณดูเสร็จแล้ว สามารถใช้ git checkout <branch-name> (เช่น git checkout main) เพื่อกลับมาที่ปัจจุบันได้อย่างปลอดภัย โดยที่ประวัติ commit และงานล่าสุดของคุณยังอยู่ครบ</branch-name></p>
+</blockquote>
+<blockquote>
+<p>สรุปถ้า commit ปัจจุบันมี error ในโค้ดและอยากย้ายกลับไปเริ่มใหม่ใน commit ก่อนหน้าแนะนำให้ใช้ git reset --hard <commit> เพื่อย้อนกลับไปยัง commit ที่ต้องการ</commit></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> reset <span class="token parameter variable">--hard</span> HEAD~1
+</code></pre><p>เพราะเป้าหมายของคุณคือ "ทิ้ง commit ล่าสุดที่มีปัญหา และย้อนกลับไปเริ่มต้นใหม่ที่ commit ก่อนหน้านั้น"</p>
+<p><code>git reset --hard HEAD~1</code> จะทำสิ่งที่คุณต้องการทุกอย่าง:</p>
+<ul>
+<li>ลบ commit ล่าสุด ที่มี error ออกจากประวัติของ Branch</li>
+<li>ล้างการเปลี่ยนแปลงทั้งหมด ที่มาจาก commit ที่ผิดพลาดนั้นออกจากโค้ดของคุณ</li>
+<li>ทำให้ไฟล์ทั้งหมดในโปรเจกต์ของคุณกลับไปอยู่ในสถานะที่สมบูรณ์ ณ commit ก่อนหน้า พร้อมให้คุณเริ่มทำงานต่อได้ทันที</li>
+</ul>
+<h4 id="4-เชื่อมต่อและจัดการ-remote-remotes">4. เชื่อมต่อและจัดการ Remote (Remotes) </h4>
+<h5 id="41-สร้าง-remote-repository-บน-github">4.1 สร้าง Remote Repository บน GitHub </h5>
+<ol>
+<li>ไปที่ <a href="https://github.com">GitHub</a> และล็อกอินเข้าสู่ระบบ</li>
+<li>คลิกที่ปุ่ม "New" เพื่อสร้าง Repository ใหม่</li>
+<li>กรอกชื่อ Repository เช่น <code>basic-git</code></li>
+<li>เลือก Public หรือ Private ตามต้องการ</li>
+<li>คลิกที่ปุ่ม "Create repository"</li>
+</ol>
+<h5 id="42-เชื่อมต่อ-local-repository-กับ-remote-repository">4.2 เชื่อมต่อ Local Repository กับ Remote Repository </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> remote <span class="token function">add</span> origin <span class="token operator">&lt;</span>remote-repository-URL<span class="token operator">&gt;</span>
+<span class="token function">git</span> branch <span class="token parameter variable">-M</span> main
+<span class="token function">git</span> push <span class="token parameter variable">-u</span> origin main
+</code></pre><h5 id="43-ตรวจสอบ-remote-ที่เชื่อมต่ออยู่">4.3 ตรวจสอบ Remote ที่เชื่อมต่ออยู่ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> remote <span class="token parameter variable">-v</span>
+</code></pre><h5 id="44-ดึงข้อมูลจาก-remote-repository">4.4 ดึงข้อมูลจาก Remote Repository </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> pull origin main
+</code></pre><h5 id="45-ส่งข้อมูลไปยัง-remote-repository">4.5 ส่งข้อมูลไปยัง Remote Repository </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> push origin main
+</code></pre><h4 id="5-การจัดการ-branches">5. การจัดการ Branches </h4>
+<h5 id="51-สร้าง-branch-ใหม่">5.1 สร้าง Branch ใหม่ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> branch <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
+
+<span class="token comment"># หรือ</span>
+<span class="token function">git</span> checkout <span class="token parameter variable">-b</span> <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
+
+<span class="token comment"># เช่น</span>
+<span class="token function">git</span> branch develop
+
+<span class="token comment"># หรือ</span>
+<span class="token function">git</span> checkout <span class="token parameter variable">-b</span> develop
+</code></pre><h5 id="52-สลับไปยัง-branch-ที่ต้องการ">5.2 สลับไปยัง Branch ที่ต้องการ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> switch <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
+
+<span class="token comment"># หรือ</span>
+<span class="token function">git</span> checkout <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
+
+<span class="token comment"># เช่น</span>
+<span class="token function">git</span> switch develop
+<span class="token comment"># หรือ</span>
+<span class="token function">git</span> checkout develop
+</code></pre><blockquote>
+<p>git switch (ผู้เชี่ยวชาญด้านการสลับ 🚂)<br>
+git switch ถูกสร้างขึ้นมาใหม่ (ใน Git เวอร์ชัน 2.23) โดยมีวัตถุประสงค์เดียวคือ การสลับ Branch<br>
+หน้าที่ชัดเจน: ใช้สำหรับเปลี่ยนจาก Branch หนึ่งไปยังอีก Branch หนึ่งเท่านั้น<br>
+ปลอดภัยกว่า: git switch จะ ป้องกัน ไม่ให้คุณสลับ Branch หากการสลับนั้นจะทำให้งานที่คุณทำค้างไว้ (แต่ยังไม่ได้ commit) สูญหาย มันจะเตือนให้คุณ commit หรือ stash งานก่อน ซึ่งช่วยลดความผิดพลาดได้มาก</p>
+</blockquote>
+<blockquote>
+<p>git checkout (มีดพกสวิส)<br>
+git checkout เป็นคำสั่งที่มีความสามารถหลากหลายมากกว่า มันสามารถใช้ได้ทั้งการสลับ Branch, การสร้าง Branch ใหม่, การแวะดู commit ในอดีต, และการกู้คืนไฟล์จาก commit ก่อนหน้า<br>
+ความสามารถหลากหลาย: git checkout สามารถทำได้หลายอย่างในคำสั่งเดียว ซึ่งทำให้มันมีความซับซ้อนและอาจทำให้เกิดความสับสนได้<br>
+เสี่ยงต่อความผิดพลาด: เนื่องจาก git checkout มีหลายหน้าที่ มันอาจทำให้ผู้ใช้เผลอทำสิ่งที่ไม่ต้องการ เช่น การสลับ Branch โดยไม่ตั้งใจและสูญเสียงานที่ยังไม่ได้ commit</p>
+</blockquote>
+<h5 id="53-สร้างไฟล์ใหม่และ-commit-ใน-branch-ใหม่">5.3 สร้างไฟล์ใหม่และ commit ใน Branch ใหม่ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">touch</span> develop_file.txt
+<span class="token function">git</span> <span class="token function">add</span> develop_file.txt
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"เพิ่มไฟล์ใหม่ใน Branch develop"</span>
+<span class="token function">git</span> push <span class="token parameter variable">-u</span> origin develop
+</code></pre><h5 id="54-รวม-branch-กลับไปยัง-main">5.4 รวม Branch กลับไปยัง main </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> checkout main
+<span class="token function">git</span> merge develop
+</code></pre><h5 id="55-ลบ-branch-ที่ไม่ต้องการ">5.5 ลบ Branch ที่ไม่ต้องการ </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> branch <span class="token parameter variable">-d</span> develop
+</code></pre><h4 id="6-การแก้ไขข้อขัดแย้ง-merge-conflicts">6. การแก้ไขข้อขัดแย้ง (Merge Conflicts) </h4>
+<h5 id="61-สร้างข้อขัดแย้ง">6.1 สร้างข้อขัดแย้ง </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> checkout develop
+<span class="token builtin class-name">echo</span> <span class="token string">"Hello from develop"</span> <span class="token operator">&gt;</span> conflict.txt
+<span class="token function">git</span> <span class="token function">add</span> conflict.txt
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"เพิ่มไฟล์ conflict.txt ใน Branch develop"</span>
+<span class="token function">git</span> push <span class="token parameter variable">-u</span> origin develop
+</code></pre><pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> checkout main
+<span class="token builtin class-name">echo</span> <span class="token string">"Hello from main"</span> <span class="token operator">&gt;</span> conflict.txt
+<span class="token function">git</span> <span class="token function">add</span> conflict.txt
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"เพิ่มไฟล์ conflict.txt ใน Branch main"</span>
+<span class="token function">git</span> push origin main
+</code></pre><h5 id="62-พยายามรวม-branch">6.2 พยายามรวม Branch </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> merge develop
+<span class="token comment"># จะเกิดข้อขัดแย้ง</span>
+<span class="token function">git</span> status
+<span class="token comment"># แก้ไขไฟล์ conflict.txt</span>
+<span class="token function">git</span> <span class="token function">add</span> conflict.txt
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"แก้ไขข้อขัดแย้งในไฟล์ conflict.txt"</span>
+<span class="token function">git</span> push origin main
+</code></pre><blockquote>
+<p>แนวทางการแก้ไขข้อขัดแย้ง</p>
+<ol>
+<li>เปิดไฟล์ที่มีข้อขัดแย้งในโปรแกรมแก้ไขข้อความ (เช่น VS Code)</li>
+<li>ค้นหาส่วนที่มีข้อขัดแย้ง ซึ่งจะถูกทำเครื่องหมายด้วย <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, และ <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></li>
+<li>ตัดสินใจเลือกว่าจะเก็บส่วนใด หรือผสมผสานกัน</li>
+<li>ลบเครื่องหมายข้อขัดแย้งทั้งหมดออกจากไฟล์</li>
+<li>บันทึกไฟล์และปิดโปรแกรมแก้ไขข้อความ</li>
+<li>ใช้คำสั่ง <code>git add &lt;file&gt;</code> เพื่อทำเครื่องหมายว่าได้แก้ไขข้อขัดแย้งแล้ว</li>
+<li>ใช้คำสั่ง <code>git commit</code> เพื่อสร้าง commit ใหม่ที่บันทึกการแก้ไขข้อขัดแย้ง</li>
+</ol>
+</blockquote>
+<h4 id="7-การใช้งาน-gitignore">7. การใช้งาน .gitignore </h4>
+<blockquote>
+<p>ไฟล์ .gitignore ใช้เพื่อบอก Git ว่าไม่ต้องติดตาม (track) หรือไม่ต้องรวมไฟล์หรือโฟลเดอร์บางอย่างในระบบควบคุมเวอร์ชัน</p>
+</blockquote>
+<h5 id="71-สร้างไฟล์-gitignore">7.1 สร้างไฟล์ .gitignore </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">echo</span> <span class="token string">"node_modules/"</span> <span class="token operator">&gt;&gt;</span> .gitignore
+<span class="token builtin class-name">echo</span> <span class="token string">"*.log"</span> <span class="token operator">&gt;&gt;</span> .gitignore
+<span class="token builtin class-name">echo</span> <span class="token string">"dist/"</span> <span class="token operator">&gt;&gt;</span> .gitignore
+<span class="token builtin class-name">echo</span> <span class="token string">".env"</span> <span class="token operator">&gt;&gt;</span> .gitignore
+</code></pre><hr>
+<h2 id="สิ่งที่เรียนรู้ใน-day-1">สิ่งที่เรียนรู้ใน Day 1 </h2>
+<p>✅ พื้นฐานการใช้งาน Git และ GitHub<br>
+✅ การติดตั้งและตั้งค่าเครื่องมือที่ใช้ในหลักสูตร<br>
+✅ การสร้างและจัดการ Repository ด้วย Git<br>
+✅ การสร้างและจัดการ Branches ใน Git<br>
+✅ การแก้ไขข้อขัดแย้ง (Merge Conflicts) ใน Git</p>
+<hr>
+<h2 id="หมายเหตุ">หมายเหตุ </h2>
+<ul>
+<li>ใช้ Node.js เวอร์ชั่น 22.x</li>
+<li>ใช้ Java JDK เวอร์ชั่น 17 หรือ 21 เท่านั้น (เก่าหรือใหม่กว่านี้ไม่รองรับ)</li>
+<li>ใช้ Python เวอร์ชั่น 3.10 ขึ้นไป</li>
+<li>ใช้ Docker Desktop เวอร์ชั่นล่าสุด</li>
+<li>ใช้ Git เวอร์ชั่นล่าสุด</li>
+<li>ใช้ Visual Studio Code เวอร์ชั่นล่าสุด</li>
+<li>ใช้ Git Bash (สำหรับ Windows) หรือ Terminal (สำหรับ Mac/Linux)</li>
+</ul>
+<h2 id="สรุป">สรุป </h2>
+<p>ขอให้สนุกกับการเรียนรู้ DevOps Jenkins &amp; GitHub Actions &amp; N8N ครับ!</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
